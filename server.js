@@ -28,12 +28,6 @@ app.use((request, response, next) => {
 });
 
 app.get("/", (request,response) => {
-  response.send({
-    "message": "hello world"
-  });
-});
-
-app.get("/home",(request, response) => {
   response.render("home.hbs", {
     name: "Chandan"
   });
